@@ -1,7 +1,4 @@
-// src/components/ContactMe.jsx
-
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -24,8 +21,15 @@ const ContactMe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/contact/submit', formData);
-      setSuccessMessage(response.data.message);
+      const response = await fetch('http://localhost:5000/api/contact/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      setSuccessMessage(data.message);
       setErrorMessage('');
       setFormData({
         name: '',

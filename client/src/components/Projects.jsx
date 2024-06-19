@@ -4,14 +4,22 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'This is a brief description of my first project.',
-    link: 'http://example.com',
+    title: 'Flappy Bird',
+    description: `Technologies Used: Python (Pygame) 
+     Developed a Flappy Bird game using Python and Pygame. Implemented mechanics like gravity, collision detection, and scoring, with modular code for easy maintenance.`,
+    link: 'https://github.com/rohitsahu23866/Flappybird.git',
   },
   {
-    title: 'Project Two',
-    description: 'This is a brief description of my second project.',
-    link: 'http://example.com',
+    title: 'Algorithm Visualizer',
+    description: `Technologies Used: React, Tailwind CSS, JavaScript
+Developed a web application to visualize sorting algorithms like Bubble Sort, Quick Sort, Merge Sort, and Selection Sort. Utilized React for dynamic rendering and Tailwind CSS for a sleek UI, providing real-time algorithm visualization.`,
+    link: 'https://github.com/rohitsahu23866/AlgorithmVisualizer.git',
+  },
+  {
+    title: 'Calculator',
+    description: `Technologies Used: React, Tailwind CSS, JavaScript
+Built a calculator web application with React for dynamic functionality and JavaScript for accurate calculations. Designed a responsive interface using Tailwind CSS for a seamless user experience.`,
+    link: 'https://github.com/rohitsahu23866/Calculator.git',
   },
 ];
 
